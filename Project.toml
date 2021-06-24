@@ -1,0 +1,8 @@
+name = "eddyline"
+uuid = "0404531f-eb58-46aa-b002-b10e229f9151"
+authors = ["rmcmahon "]
+version = "0.1.0"
+
+[deps]
+ImageView = "86fae568-95e7-573e-a6b2-d8a6b900c9ef"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
