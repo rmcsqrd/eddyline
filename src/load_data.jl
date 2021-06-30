@@ -31,6 +31,7 @@ function load_image_data(index_list, type="train")
                 start_offset = max((index-1)*nrow*ncol, 1)
                 end_offset = start_offset+nrow*ncol-1
                 image_array[:, :, k] = reshape(pixel_data[start_offset:end_offset], (nrow, ncol))' # transpose because of how reshape reshapes
+                image_array[:, :, k] /= 255  # normalize ∈ [0,1]
         end
 
         # look at label data
@@ -46,3 +47,4 @@ function load_image_data(index_list, type="train")
 
         return image_array, label_list
 end
+
