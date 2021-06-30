@@ -4,6 +4,7 @@ Work in progress machine learning testbed using the MNIST numbers dataset
 ## Example Usage
 
 #### Load Image
+Note, to do this you'll need to download and uncompress all of the `.gz` files from [here](http://yann.lecun.com/exdb/mnist/) into the `/data/` folder.
 ```julia
 using ImageView
 idx_list = [1,2,100] # indices of MNIST dataset to load
